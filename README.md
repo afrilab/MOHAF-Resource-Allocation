@@ -57,10 +57,15 @@ This project is licensed under the MIT License.
 If you use this repository, please cite the associated paper:
 
 ```
-@inproceedings{Agrawal2025,
-  title     = {MOHAF: A Multi-Objective Hierarchical Auction Framework for Scalable and Fair Resource Allocation in IoT Ecosystems},
-  author    = {Agrawal, K., Goktas, P., Bandopadhyay, A., Ghosh, D., Jasmine, J. & Gourisaria, M. K.},
-  year      = {2025}
+@misc{Agrawal2025,
+  author       = {Agrawal, Kushagra and Goktas, Polat and Bandopadhyay, Anjan, and Ghosh, Debolina and Jena, Junali Jasmine and Gourisaria, Mahendra Kumar},
+  title        = {MOHAF: A Multi-Objective Hierarchical Auction Framework for Scalable and Fair Resource Allocation in IoT Ecosystems},
+  year         = {2025},
+  eprint       = {2508.14830},
+  archivePrefix= {arXiv},
+  primaryClass = {cs.DC},
+  doi          = {10.48550/arXiv.2508.14830},
+  url          = {https://arxiv.org/abs/2508.14830}
 }
 ```
 
