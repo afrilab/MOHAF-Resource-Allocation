@@ -16,12 +16,34 @@ It combines hierarchical clustering, submodular optimization, and dynamic pricin
 We provide code, experimental setup, and references to enable reproducibility and extension of this work.
 
 ---
-
 ## Repository Contents
-- MOHAF.ipynb – Jupyter Notebook implementation of the MOHAF framework  
-- requirements.txt – Python dependencies for running the notebook  
-- README.md – Documentation  
 
+```
+MOHAF-Resource-Allocation
+├─ .gitignore
+├─ LICENSE
+├─ MOHAF.ipynb
+├─ README.md
+├─ docs
+│  ├─ index.md
+│  ├─ mohaf_paper.pdf
+│  └─ usage.md
+├─ examples
+│  ├─ analyze_results.ipynb
+│  └─ run_experiments.py
+├─ mohaf
+│  ├─ __init__.py
+│  ├─ auction_mechanisms.py
+│  ├─ core.py
+│  ├─ scenarios.py
+│  └─ utils.py
+├─ pyproject.toml
+├─ requirements.txt
+└─ tests
+   ├─ __init__.py
+   ├─ test_auction_mechanisms.py
+   └─ test_core.py
+```
 ---
 
 ## Usage
