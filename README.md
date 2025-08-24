@@ -46,22 +46,38 @@ MOHAF-Resource-Allocation
 ```
 ---
 
-## Usage
-### Prerequisites
-- Python 3.9+  
-- Jupyter Notebook or JupyterLab  
+## Installation
 
-### Steps
-1. Install Python and Jupyter  
-2. Install dependencies:  
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Launch the notebook:  
-   ```bash
-   jupyter notebook MOHAF.ipynb
-   ```
-4. Modify parameters in the notebook to reproduce experiments or adapt MOHAF to other datasets.  
+You can install MOHAF directly from PyPI:
+
+```bash
+pip install mohaf
+```
+
+## Usage
+
+After installation, you can import MOHAF in your Python scripts:
+
+```python
+from mohaf.auction_mechanisms import MOHAFAuction
+from mohaf.scenarios import generate_synthetic_scenario
+
+# 1. Initialize the auction mechanism
+mohaf_auction = MOHAFAuction(alpha=0.3, beta=0.3, gamma=0.2, delta=0.2)
+
+# 2. Generate a synthetic scenario
+resources, requests = generate_synthetic_scenario(n_resources=50, n_requests=30)
+
+# 3. Run the auction
+results = mohaf_auction.run_auction(resources, requests)
+metrics = mohaf_auction.calculate_metrics(results)
+
+print("Auction completed!")
+print(f"  Allocation Efficiency: {metrics['allocation_efficiency']:.3f}")
+print(f"  Revenue: ${metrics['revenue']:.2f}")
+```
+
+For more detailed examples and to reproduce the experiments from the paper, please see the `examples/` directory and the `MOHAF.ipynb` notebook in the repository.  
 
 ---
 
