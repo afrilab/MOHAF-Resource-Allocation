@@ -4,11 +4,12 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mohaf-research-framework"
+name = "mohaf-afri"
 version = "0.1.0"
 description = "A research framework for Multi-Objective Hierarchical Auction Framework (MOHAF) for IoT resource allocation."
 authors = [
-    {name = "Your Name", email = "your.email@example.com"},
+    {name = "Kushagra Agrawal", email = "kush4409@gmail.com"},
+    {name = "Polat Goktas", email = "polat.goktas@gmail.com"},
 ]
 readme = "README.md"
 requires-python = ">=3.8"
@@ -35,5 +36,5 @@ classifiers = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/your-username/Github-MOHAF"
-"Bug Tracker" = "https://github.com/your-username/Github-MOHAF/issues"
+"Homepage" = "https://github.com/afrilab/MOHAF-Resource-Allocation/"
+"Bug Tracker" = "https://github.com/afrilab/Github-MOHAF/issues"
